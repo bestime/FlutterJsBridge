@@ -6,18 +6,21 @@ import 'package:flutter_js_bridge/views/hello_world/index.dart';
 const navigationList = [
   {
     'name': '欢迎页',
-    'routeWidget': HelloWorld(),
     'routeName': '/hello-world',
-    'hero-id': '',
+    'hero-id': 'A',
     'image': 'http://placekitten.com/g/150/280',
   },
   {
+    'name': '网页',
+    'routeName': '/h5',
+    'hero-id': 'B',
+    'image': 'http://placekitten.com/g/300/400',
+  },
+  {
     'name': '桥思科技',
-    'routeWidget': GoodsDetail(),
     'routeName': '/goods-detail',
     'hero-id': 'goods-detail-image',
     'image': 'http://placekitten.com/g/200/300'
-
   }
 ];
 

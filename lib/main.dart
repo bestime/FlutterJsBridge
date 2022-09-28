@@ -1,6 +1,8 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_js_bridge/plugins/flutter_webview/index.dart';
 import 'package:flutter_js_bridge/views/goods_detail/index.dart';
+import 'package:flutter_js_bridge/views/h5_page/index.dart';
 import 'package:flutter_js_bridge/views/hello_world/index.dart';
 import 'package:flutter_js_bridge/views/home_page/index.dart';
 
@@ -30,6 +32,8 @@ class MyApp extends StatelessWidget {
           toWidget = const HelloWorld();
         }else if(settings.name == '/goods-detail') {
           toWidget = const GoodsDetail();
+        } else if(settings.name == '/h5') {
+          toWidget = const H5page();
         } else {
           toWidget = const HomePage();
         }
